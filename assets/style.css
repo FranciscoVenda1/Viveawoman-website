@@ -1,0 +1,104 @@
+/* Vivea Woman — public website · R.17B */
+:root{
+  --navy:#1F3A5F; --blush:#E8B7C5; --gold:#C8A24D;
+  --soft:#FAFAF8; --gray:#F2F2F2; --ink:#25324A; --muted:#5C6B84;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--soft);color:var(--ink);line-height:1.65;font-size:17px;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--navy);line-height:1.2;font-weight:600}
+img{max-width:100%;display:block}
+a{color:var(--navy)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.container{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* Header */
+.site-header{position:sticky;top:0;background:rgba(250,250,248,.95);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--gray);z-index:10}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap;padding:8px 0}
+.brand{font-family:Georgia,serif;font-size:1.35rem;color:var(--navy);text-decoration:none;font-weight:700;letter-spacing:.02em}
+.brand .dot{color:var(--gold)}
+.main-nav{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.main-nav a{text-decoration:none;color:var(--ink);font-size:.95rem;padding:10px 12px;border-radius:8px}
+.main-nav a:hover{background:var(--gray)}
+.lang-switch{display:flex;gap:2px;border:1px solid var(--navy);border-radius:999px;overflow:hidden;font-size:.85rem}
+.lang-switch a,.lang-switch span{padding:8px 14px;text-decoration:none;min-width:44px;text-align:center}
+.lang-switch span[aria-current]{background:var(--navy);color:var(--soft)}
+.lang-switch a{color:var(--navy)}
+.lang-switch a:hover{background:var(--gray)}
+
+/* Hero */
+.hero{padding:72px 0 64px;background:linear-gradient(180deg,var(--soft) 0%,#F7EFF1 100%)}
+.hero .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;font-weight:700;margin-bottom:14px}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);max-width:18ch}
+.hero p.lead{margin-top:20px;max-width:56ch;font-size:1.15rem;color:var(--muted)}
+.hero .cta-row{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.pill{display:inline-block;background:var(--navy);color:var(--soft);padding:12px 22px;border-radius:999px;font-size:.95rem}
+.pill.outline{background:transparent;color:var(--navy);border:1.5px solid var(--navy);text-decoration:none}
+.pill.outline:hover{background:var(--navy);color:var(--soft)}
+
+/* Sections */
+section{padding:64px 0}
+section.alt{background:var(--gray)}
+.section-title{font-size:clamp(1.5rem,3.5vw,2.1rem);margin-bottom:10px}
+.section-sub{color:var(--muted);max-width:62ch;margin-bottom:36px}
+.accent-bar{width:56px;height:4px;background:var(--gold);border-radius:2px;margin-bottom:22px}
+
+/* Cards */
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:#fff;border:1px solid var(--gray);border-radius:14px;padding:26px}
+.card h3{font-size:1.1rem;margin-bottom:8px}
+.card p{font-size:.95rem;color:var(--muted)}
+.card .icon{font-size:1.5rem;margin-bottom:12px;color:var(--gold)}
+
+/* Sofia */
+.sofia{background:var(--navy);color:var(--soft)}
+.sofia h2,.sofia h3{color:var(--blush)}
+.sofia .section-sub{color:#D9DEE8}
+.sofia ul{list-style:none;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.sofia li{background:rgba(250,250,248,.06);border:1px solid rgba(232,183,197,.25);border-radius:12px;padding:18px 20px;font-size:.97rem}
+.sofia li strong{color:var(--blush)}
+
+/* Plans */
+.plans{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));max-width:720px}
+.plan{background:#fff;border:1px solid var(--gray);border-radius:14px;padding:28px}
+.plan.premium{border:1.5px solid var(--gold)}
+.plan .tag{display:inline-block;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;
+  color:var(--navy);background:var(--blush);padding:4px 12px;border-radius:999px;margin-bottom:14px}
+.plan.premium .tag{background:var(--gold);color:#fff}
+.plan ul{list-style:none;margin-top:12px}
+.plan li{padding:7px 0;font-size:.95rem;color:var(--muted)}
+.plan li::before{content:"✓";color:var(--gold);margin-right:10px;font-weight:700}
+
+/* Disclaimer */
+.disclaimer{border-left:4px solid var(--blush);background:#fff;border-radius:0 12px 12px 0;padding:20px 24px;max-width:760px}
+.disclaimer p{font-size:.93rem;color:var(--muted)}
+
+/* Contact */
+.contact-list{list-style:none;display:grid;gap:14px;max-width:560px}
+.contact-list li{background:#fff;border:1px solid var(--gray);border-radius:12px;padding:16px 20px;display:flex;
+  justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+.contact-list .label{font-weight:600;color:var(--navy)}
+.contact-list a{word-break:break-all}
+
+/* Footer */
+.site-footer{background:var(--navy);color:#C9D2E0;padding:48px 0 32px;font-size:.92rem}
+.footer-grid{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;margin-bottom:28px}
+.site-footer .brand{color:var(--soft)}
+.footer-nav{display:flex;gap:4px 22px;flex-wrap:wrap;list-style:none;align-items:center}
+.footer-nav a{color:#C9D2E0;text-decoration:none;padding:8px 0;display:inline-block}
+.footer-nav a:hover{color:var(--blush)}
+.footer-bottom{border-top:1px solid rgba(250,250,248,.15);padding-top:22px;display:flex;
+  justify-content:space-between;gap:12px;flex-wrap:wrap}
+.footer-bottom .small{font-size:.85rem;color:#93A2B8;max-width:72ch}
+
+@media (max-width:640px){
+  .hero{padding:52px 0 44px}
+  section{padding:48px 0}
+  .header-inner{justify-content:center}
+}
