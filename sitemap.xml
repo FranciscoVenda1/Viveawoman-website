@@ -41,4 +41,14 @@
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://viveawoman.com/support/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://viveawoman.com/en/support/"/>
   </url>
+  <url>
+    <loc>https://viveawoman.com/ambassador-rules/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://viveawoman.com/ambassador-rules/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://viveawoman.com/en/ambassador-rules/"/>
+  </url>
+  <url>
+    <loc>https://viveawoman.com/en/ambassador-rules/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://viveawoman.com/ambassador-rules/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://viveawoman.com/en/ambassador-rules/"/>
+  </url>
 </urlset>
